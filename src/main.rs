@@ -27,7 +27,8 @@ fn main() {
    //println!("Hello, world!");
    let client = Client::new();
 
-   let mut res = client.get("https://en.wikipedia.org").send().unwrap();
+   //let mut res = client.get("https://en.wikipedia.org").send().unwrap();
+   let mut res = client.get("https://www.google.com").send().unwrap();
    assert_eq!(res.status, hyper::Ok);
    let dom = html5ever::rcdom::RcDom::default();
    let parser = html5ever::parse_document(dom, html5ever::ParseOpts::default());
