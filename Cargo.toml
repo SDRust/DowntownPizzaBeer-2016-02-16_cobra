@@ -1,6 +1,8 @@
 [package]
+authors = ["Brian Manning <brian@xaoc.org>"]
 name = "wikidumpificate"
 version = "0.1.0"
-authors = ["Brian Manning <brian@xaoc.org>"]
 
 [dependencies]
+html5ever = "0.5.1"
+hyper = "0.7.2"
